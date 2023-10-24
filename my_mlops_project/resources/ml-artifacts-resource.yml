@@ -1,24 +1,24 @@
 # Deployment target specific values
 targets:
-  dev:
+  alex_dev:
     resources:
       registered_models:
         model:
           comment: Registered model in Unity Catalog for the "my-mlops-project" ML Project for ${bundle.target} deployment target.
 
-  test:
+  alex_test:
     resources:
       registered_models:
         model:
           comment: Registered model in Unity Catalog for the "my-mlops-project" ML Project for ${bundle.target} deployment target.
 
-  staging:
+  alex_staging:
     resources:
       registered_models:
         model:
           comment: Registered model in Unity Catalog for the "my-mlops-project" ML Project for ${bundle.target} deployment target.
 
-  prod:
+  alex_prod:
     resources:
       registered_models:
         model:

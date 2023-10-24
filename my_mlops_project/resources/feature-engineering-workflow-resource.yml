@@ -11,6 +11,11 @@ permissions: &permissions
     - level: CAN_VIEW
       group_name: users
 
+# added custom variables to parameters
+input_dates: &input_dates
+  input_start_date: "2016-01-01"
+  input_end_date: "2016-01-31"
+
 resources:
   jobs:
     write_feature_table_job:
@@ -27,8 +32,9 @@ resources:
               # TODO modify these arguments to reflect your setup.
               input_table_path: /databricks-datasets/nyctaxi-with-zipcodes/subsampled
               # TODO: Empty start/end dates will process the whole range. Update this as needed to process recent data.
-              input_start_date: ""
-              input_end_date: ""
+              <<: *input_dates
+              # input_start_date: ""
+              # input_end_date: ""
               timestamp_column: tpep_pickup_datetime
               output_table_name: ${bundle.target}.default.trip_pickup_features
               features_transform_module: pickup_features
@@ -43,8 +49,9 @@ resources:
               # TODO: modify these arguments to reflect your setup.
               input_table_path: /databricks-datasets/nyctaxi-with-zipcodes/subsampled
               # TODO: Empty start/end dates will process the whole range. Update this as needed to process recent data.
-              input_start_date: ""
-              input_end_date: ""
+              <<: *input_dates
+              # input_start_date: ""
+              # input_end_date: ""
               timestamp_column: tpep_dropoff_datetime
               output_table_name: ${bundle.target}.default.trip_dropoff_features
               features_transform_module: dropoff_features
