@@ -18,7 +18,7 @@ env:
   DATABRICKS_TOKEN: ${{ secrets.PROD_WORKSPACE_TOKEN }}
 
 jobs:
-  prod:
+  alex_prod:
     concurrency: my-mlops-project-prod-bundle-job
     runs-on: ubuntu-22.04
     steps:

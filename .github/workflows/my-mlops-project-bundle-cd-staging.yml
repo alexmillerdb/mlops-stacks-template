@@ -18,7 +18,7 @@ env:
   DATABRICKS_TOKEN: ${{ secrets.STAGING_WORKSPACE_TOKEN }}
 
 jobs:
-  staging:
+  alex_staging:
     concurrency: my-mlops-project-staging-bundle-job
     runs-on: ubuntu-22.04
     steps:
