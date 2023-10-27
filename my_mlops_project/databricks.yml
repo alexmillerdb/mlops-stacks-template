@@ -24,11 +24,11 @@ targets:
       # TODO: add dev workspace URL
       host: https://e2-demo-field-eng.cloud.databricks.com
 
-  alex_staging:
+  staging:
     workspace:
       host: https://e2-demo-field-eng.cloud.databricks.com
 
-  alex_prod:
+  prod:
     workspace:
       host: https://e2-demo-field-eng.cloud.databricks.com
 

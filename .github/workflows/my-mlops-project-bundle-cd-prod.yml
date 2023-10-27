@@ -18,7 +18,7 @@ env:
   DATABRICKS_TOKEN: ${{ secrets.PROD_WORKSPACE_TOKEN }}
 
 jobs:
-  alex_prod:
+  prod:
     concurrency: my-mlops-project-prod-bundle-job
     runs-on: ubuntu-22.04
     steps:
@@ -27,8 +27,8 @@ jobs:
       - name: Validate Bundle For Prod
         id: validate
         run: |
-          databricks bundle validate -t alex_prod
+          databricks bundle validate -t prod
       - name: Deploy Bundle to Prod
         id: deploy
         run: |
-          databricks bundle deploy -t alex_prod
+          databricks bundle deploy -t prod

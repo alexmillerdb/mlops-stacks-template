@@ -12,13 +12,13 @@ targets:
         model:
           comment: Registered model in Unity Catalog for the "my-mlops-project" ML Project for ${bundle.target} deployment target.
 
-  alex_staging:
+  staging:
     resources:
       registered_models:
         model:
           comment: Registered model in Unity Catalog for the "my-mlops-project" ML Project for ${bundle.target} deployment target.
 
-  alex_prod:
+  prod:
     resources:
       registered_models:
         model:
