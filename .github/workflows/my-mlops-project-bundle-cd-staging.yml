@@ -20,15 +20,15 @@ env:
 jobs:
   staging:
     concurrency: my-mlops-project-staging-bundle-job
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
       - uses: databricks/setup-cli@main
       - name: Validate Bundle For Staging
         id: validate
         run: |
-          databricks bundle validate -t staging
+          databricks bundle validate -t alex_staging
       - name: Deploy Bundle to Staging
         id: deploy
         run: |
-          databricks bundle deploy -t staging
+          databricks bundle deploy -t alex_staging
