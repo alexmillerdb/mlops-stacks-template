@@ -14,12 +14,10 @@ concurrency: my-mlops-project-feature-training-integration-test-staging
 
 jobs:
   unit_tests:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
       # Feature store tests bring up a local Spark session, so Java is required.
       - uses: actions/setup-java@v2
         with:
