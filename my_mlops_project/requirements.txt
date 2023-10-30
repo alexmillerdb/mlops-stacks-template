@@ -4,7 +4,7 @@ pandas>=1.4.3
 scikit-learn>=1.1.1
 matplotlib>=3.5.2
 Jinja2==3.0.3
-# pyspark~=3.3.0
+pyspark~=3.3.0
 pytz~=2022.2.1
 # databricks-feature-store==0.15.2
 lightgbm==4.1.0
