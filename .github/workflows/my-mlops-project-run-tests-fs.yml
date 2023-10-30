@@ -36,7 +36,7 @@ jobs:
 
   integration_test:
     needs: unit_tests
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
