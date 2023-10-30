@@ -23,16 +23,20 @@ targets:
     workspace:
       # TODO: add dev workspace URL
       host: https://e2-demo-field-eng.cloud.databricks.com
+      profile: AWS
 
   alex_staging:
     workspace:
       host: https://e2-demo-field-eng.cloud.databricks.com
+      profile: AWS
 
   prod:
     workspace:
       host: https://e2-demo-field-eng.cloud.databricks.com
+      profile: AWS
 
   alex_test:
     workspace:
       host: https://e2-demo-field-eng.cloud.databricks.com
+      profile: AWS
 
